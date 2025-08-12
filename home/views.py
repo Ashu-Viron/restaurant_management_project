@@ -1,6 +1,5 @@
 from django.shortcuts import render
+from datetime import datetime
 
-from .notes import notes
-def homepage(req):
-    note=Note.objects.all().order_by('-id');
-    return render(request,"home.html",{"notes":notes})
+def homepage(request):
+    return render(request,'home.html',{'year':datetime.now().year})
