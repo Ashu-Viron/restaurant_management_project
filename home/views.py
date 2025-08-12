@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .notes import notes
+def homepage(req):
+    note=Note.objects.all().order_by('-id');
+    return render(request,"home.html",{"notes":notes})
