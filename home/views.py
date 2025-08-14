@@ -14,6 +14,7 @@ def home(request):
     phone_number = settings.RESTAURANT_PHONE_NUMBER
     return render(request, "home.html", {
             "restaurant_name": restaurant_name,
-            "phone_number": phone_number
+            "phone_number": phone_number,
+            "welcome_message": "Welcome to Delicious Bites! We serve love on every plate."
     })
 
