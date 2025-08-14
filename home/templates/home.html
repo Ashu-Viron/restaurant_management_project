@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Restaurant Management</title>
+            <title>{{restaurant_name}}</title>
                 <script src="https://cdn.tailwindcss.com"></script>
                 </head>
                 <body class="bg-gray-50 font-sans">
@@ -13,6 +13,7 @@
          <header class="bg-red-600 text-white p-4 shadow-md">
                <div class="max-w-6xl mx-auto flex justify-between items-center">
                      <h1 class="text-2xl font-bold">{{ restaurant_name }}}}</h1>
+                     <span class="text-sm">{{ restaurant_phone }}</span>
                          <nav class="space-x-6">
                           <a href="{% url 'menu' %}" class="hover:underline">Menu</a>
                            <a href="{% url 'reservations' %}" class="hover:underline">Reservations</a>
@@ -46,25 +47,26 @@
                                                                                                                                                                                                                                                                                                                                                                                                       
 <section class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-8">
  <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
- <h3 class="font-bold text-lg text-gray-800">📋 Manage Menu</h3>
+ <h3 class="font-bold text-lg text-gray-800">Manage Menu</h3>
              <p class="text-gray-600 mt-2">Add, edit, and update menu items with ease.</p>
                      </div>
                              <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-     <h3 class="font-bold text-lg text-gray-800">🪑 Reservations</h3>
+     <h3 class="font-bold text-lg text-gray-800">Reservations</h3>
          <p class="text-gray-600 mt-2">Track and manage table bookings effortlessly.</p>
-      </div>
+ </div>
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-      <h3 class="font-bold text-lg text-gray-800">🛒 Orders</h3>
+      <h3 class="font-bold text-lg text-gray-800">Orders</h3>
 <p class="text-gray-600 mt-2">Monitor in-house and online orders in real time.</p>
    </div>
 <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-<h3 class="font-bold text-lg text-gray-800">👨‍🍳 Staff</h3>
+<h3 class="font-bold text-lg text-gray-800">Staff</h3>
 <p class="text-gray-600 mt-2">Manage staff schedules, roles, and performance.</p>
-        </div>
-            </section>
+</div>
+</section>
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 <footer class="bg-gray-800 text-gray-300 py-4 text-center">
+ {{ restaurant_phone }} <br>
 &copy; {{ year }} Gourmet Manager. All rights reserved.
 </footer>
 
