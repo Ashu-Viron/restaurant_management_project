@@ -1,39 +1,38 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About Us - Gourmet Manager</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Gourmet Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 font-sans">
-<header class="bg-red-600 text-white p-4 shadow-md">
- <div class="max-w-6xl mx-auto flex justify-between items-center">
-<h1 class="text-2xl font-bold">🍽 Gourmet Manager</h1>
-<nav class="space-x-6">
-<a href="{% url 'homepage' %}" class="hover:underline">Home</a>
-<a href="{% url 'about' %}" class="hover:underline">About Us</a>
-</nav>
-</div>
-</header>
+    <header class="bg-red-600 text-white p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">🍽 Gourmet Manager</h1>
+            <nav class="space-x-6">
+                <a href="{% url 'homepage' %}" class="hover:underline">Home</a>
+                <a href="{% url 'about' %}" class="hover:underline">About Us</a>
+                <a href="{% url 'menu' %}" class="hover:underline">Menu</a>
+                <a href="{% url 'contact' %}" class="hover:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<main class="max-w-4xl mx-auto p-8 bg-white shadow-md rounded-lg mt-6">
-<h2 class="text-3xl font-bold text-gray-800">About Us</h2>
-<p class="mt-4 text-gray-600 leading-relaxed">
- Welcome to Gourmet Manager — your ultimate restaurant management solution. Our mission is to help restaurant owners streamline operations, improve customer service, and boost business efficiency. From menu management to
-reservations and order tracking, we provide everything you need in one place.
-</p>
+    <main class="max-w-4xl mx-auto p-8 bg-white shadow-md rounded-lg mt-6">
+        <h2 class="text-3xl font-bold text-gray-800">About Us</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+            Welcome to Gourmet Manager — your ultimate restaurant management solution. Our mission is to help restaurant owners streamline operations, improve customer service, and boost business efficiency. From menu management to reservations and order tracking, we provide everything you need in one place.
+        </p>
 
- <div class="mt-6">
- <img src="{% static 'home/restaurant_interior.jpg' %}" alt="Restaurant Interior" class="rounded-lg shadow-md" />
-</div>
-</main>
+        <div class="mt-6">
+            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg" alt="Restaurant Interior" class="rounded-lg shadow-md w-full" />
+        </div>
+    </main>
 
-<footer class="bg-gray-800 text-gray-300 py-4 text-center mt-6">
-&copy; {{ year }} Gourmet Manager. All rights reserved.
-</footer>
+    <footer class="bg-gray-800 text-gray-300 py-4 text-center mt-6">
+        &copy; {{ year }} Gourmet Manager. All rights reserved.
+    </footer>
 </body>
 </html>
-
-                                                                                                                                                                                                                                                                                                                                        
